@@ -1,0 +1,109 @@
+html,body{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		#wrapper{
+			width: 100%;
+			height: 1000px;
+			position: absolute;
+			overflow: hidden;
+			top: 0;
+			left: 0;
+		}
+		#loading{
+			width: 100%;
+			height: 1000px;
+			background: url(../loading/loading_bg.png) no-repeat;
+			position: absolute;
+			background-size: cover;
+			top: 0;
+		}
+		div.rotate{
+			width: 380px;
+			height: 380px;
+			border-radius: 50%;
+			position: absolute;
+			left: 50%;
+			margin-left: -177px;
+			top: 18%;
+			transform-origin: 50% 50%;
+			animation: loading 8s linear infinite;
+		}
+		@keyframes loading {
+			0%{}
+			100%{transform: rotate(360deg);}
+		}
+		div.loading{
+			width: 381px;
+			height: 401px;
+			background: url(../loading/loading.png);
+			position: absolute;
+			left: 0;
+			top: -10px;
+		}
+		div.next{
+			width: 287px;
+			height: 84px;
+			background: url(../loading/next.png);
+			position: absolute;
+			left: 50%;
+			margin-left: -160px;
+			bottom: 30%;
+			cursor: pointer;
+			animation-duration: 5s;
+		}
+		div.slogan{
+			width: 607px;
+			height: 52px;
+			background: url(../loading/slogan.png);
+			position: absolute;
+			bottom: 20%;
+			left: 50%;
+			margin-left: -304px;
+			animation-duration: 3s;
+		}
+		div.next a{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		div.spaceman_01{
+			width: 335px;
+			height: 307px;
+			background: url(../loading/spaceman_01.png);
+			position: absolute;
+			bottom: 35%;
+			left: 15%;
+			animation: spaceman_01 1s infinite alternate;
+		}
+		@keyframes spaceman_01 {
+			0%{bottom: 35%;}
+			100%{bottom: 38%;}
+		}
+		div.spaceman_02{
+			width: 280px;
+			height: 366px;
+			background: url(../loading/spaceman_02.png);
+			position: absolute;
+			top: 16%;
+			right: 23%;
+			animation: spaceman_02 1s infinite alternate;
+		}
+		@keyframes spaceman_02 {
+			0%{top: 16%;}
+			100%{top: 18%;}
+		}
+		div.spaceman_03{
+			width: 361px;
+			height: 481px;
+			background: url(../loading/spaceman_03.png);
+			position: absolute;
+			bottom: 5%;
+			right: 5%;
+			animation: spaceman_03 1s infinite alternate;
+		}
+		@keyframes spaceman_03 {
+			0%{bottom: 5%;}
+			100%{bottom: 8%;}
+		}

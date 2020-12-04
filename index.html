@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loading</title>
+	<link rel="stylesheet" href="css/Animate.css">
+	<link rel="stylesheet" href="css/myStyle02.css">
+</head>
+<body>
+	<section id="wrapper">
+		<div id="loading">
+			<div class="rotate">
+				<div class="loading"></div>
+			</div>
+			<div class="spaceman_01"></div>
+			<div class="spaceman_02"></div>
+			<div class="spaceman_03"></div>
+			<div class="next animate__fadeInLeft animate__animated animate__infinite animate__delay-5s">
+				<a href="fanta.html"></a>
+			</div>
+			<div class="slogan animate__animated animate__infinite animate__delay-5s animate__fadeIn"></div>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(window).on('load',function(){
+            // location.href="sub.html"
+            setTimeout(function(){
+            	location.href="fanta.html"
+            },3000)
+        })
+	</script>
+</body>
+</html>
